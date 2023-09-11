@@ -5,13 +5,36 @@
   "dependencies": {
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
+    "@rudderstack/rudder-sdk-react-native": "*",
     "react-native": "*",
     "expo": "*",
+    "expo-application": "*",
+    "expo-blur": "*",
+    "expo-build-properties": "*",
+    "expo-constants": "*",
+    "expo-dev-client": "*",
+    "expo-device": "*",
+    "expo-font": "*",
+    "expo-image-picker": "*",
+    "expo-linear-gradient": "*",
+    "expo-linking": "*",
+    "expo-localization": "*",
+    "expo-modules-core": "*",
+    "expo-task-manager": "*",
+    "expo-updates": "*",
     "react-native-svg": "*",
-    "react-native-web": "*"
+    "react-native-web": "*",
+    "expo-splash-screen": "*",
+    "expo-status-bar": "*",
+    "react": "*"
   },
   "scripts": {
-    "eas-build-pre-install": "cd ../../ && cp package-lock.json ./apps/expo/",
-    "postinstall": "rm -r node_modules && cd ../../ && npm install && npx nx sync-deps expo && npx nx ensure-symlink expo"
+    "eas-build-pre-install": "cd ../../ && cp yarn.lock ./apps/expo/",
+    "postinstall": "rm -r node_modules && cd ../../ && yarn && yarn nx sync-deps expo && yarn nx ensure-symlink expo",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
   }
 }
