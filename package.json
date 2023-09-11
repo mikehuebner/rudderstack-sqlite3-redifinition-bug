@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "clean-app": "rm -rvf apps/expo/ios apps/expo/android"
+  },
   "dependencies": {
     "@expo/metro-config": "0.10.7",
     "@rudderstack/rudder-sdk-react-native": "1.9.0",
