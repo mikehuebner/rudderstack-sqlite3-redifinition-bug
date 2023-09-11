@@ -2031,6 +2031,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@expo/config-plugins@npm:~7.4.0":
+  version: 7.4.0
+  resolution: "@expo/config-plugins@npm:7.4.0"
+  dependencies:
+    "@expo/config-types": ^50.0.0-alpha.1
+    "@expo/json-file": ~8.2.37
+    "@expo/plist": ^0.0.20
+    "@expo/sdk-runtime-versions": ^1.0.0
+    "@react-native/normalize-color": ^2.0.0
+    chalk: ^4.1.2
+    debug: ^4.3.1
+    find-up: ~5.0.0
+    getenv: ^1.0.0
+    glob: 7.1.6
+    resolve-from: ^5.0.0
+    semver: ^7.5.3
+    slash: ^3.0.0
+    xcode: ^3.0.1
+    xml2js: 0.6.0
+  checksum: bf46881e4cb13b237b3dd69cbb67a330f7b763e3937671e208c52f5fe6fb2a9740008f17fc3dc06e46269472dd55d77da06f9228bbd2c933e1a6776c6fd44bce
+  languageName: node
+  linkType: hard
+
 "@expo/config-types@npm:49.0.0, @expo/config-types@npm:^49.0.0-alpha.1":
   version: 49.0.0
   resolution: "@expo/config-types@npm:49.0.0"
@@ -2049,6 +2072,13 @@ __metadata:
   version: 48.0.0
   resolution: "@expo/config-types@npm:48.0.0"
   checksum: 11c4b0bb5c1b4a8623c26ed5766297568385cf8e6b1444aa606c62306ea8dd5d8ecee4b52e8ba82dcaf749ffca5cde750afeef5a7a01750bca2360987f26e686
+  languageName: node
+  linkType: hard
+
+"@expo/config-types@npm:^50.0.0-alpha.1":
+  version: 50.0.0-alpha.1
+  resolution: "@expo/config-types@npm:50.0.0-alpha.1"
+  checksum: 85783161b330abbf79c8f45e673fe07389640511aeb4ec4e765449fb5bd24c3fa5b23c25f0c861b7726f48656c61e39d938d26e5ec5bbe1ef53405b59681023c
   languageName: node
   linkType: hard
 
@@ -2106,6 +2136,25 @@ __metadata:
     slugify: ^1.3.4
     sucrase: ^3.20.0
   checksum: 1755cbbec27e1915b4368af864035246489137baae93d2e5af8838531a12b2cfc964df7009a33976c0d797cac67756eb5c328c52039a748f3741b652b552e334
+  languageName: node
+  linkType: hard
+
+"@expo/config@npm:~8.3.0":
+  version: 8.3.0
+  resolution: "@expo/config@npm:8.3.0"
+  dependencies:
+    "@babel/code-frame": ~7.10.4
+    "@expo/config-plugins": ~7.4.0
+    "@expo/config-types": ^50.0.0-alpha.1
+    "@expo/json-file": ^8.2.37
+    getenv: ^1.0.0
+    glob: 7.1.6
+    require-from-string: ^2.0.2
+    resolve-from: ^5.0.0
+    semver: 7.5.3
+    slugify: ^1.3.4
+    sucrase: ^3.20.0
+  checksum: 23fe846d5831a3073944bfbbcf2f17a2ad0362a99ae6a32a2f9a3640d5cd2612f32399e0dbb16308f20144468c397dd26c540218065a176b7875701b58d6af29
   languageName: node
   linkType: hard
 
@@ -10394,6 +10443,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-modules-autolinking@npm:1.5.2":
+  version: 1.5.2
+  resolution: "expo-modules-autolinking@npm:1.5.2"
+  dependencies:
+    "@expo/config": ~8.3.0
+    chalk: ^4.1.0
+    commander: ^7.2.0
+    fast-glob: ^3.2.5
+    find-up: ^5.0.0
+    fs-extra: ^9.1.0
+  bin:
+    expo-modules-autolinking: bin/expo-modules-autolinking.js
+  checksum: fd5896cfe20a64820539fdb9cef299add3fc399260d97375d49c64f9e151816866e2d4457b2b8f42fb2f708c217d63cf9243978690bea9618f2f99733d124685
+  languageName: node
+  linkType: hard
+
 "expo-modules-core@npm:1.5.11":
   version: 1.5.11
   resolution: "expo-modules-core@npm:1.5.11"
@@ -10401,6 +10466,16 @@ __metadata:
     compare-versions: ^3.4.0
     invariant: ^2.2.4
   checksum: 85a48a6d1983671458a37ddece9e151ff8179814dd368d67b39dcf34fcdc6b44419d045ac8efcdd8179848d826b67678ce706f5533314ff8ab84537befcf7915
+  languageName: node
+  linkType: hard
+
+"expo-modules-core@npm:1.7.0":
+  version: 1.7.0
+  resolution: "expo-modules-core@npm:1.7.0"
+  dependencies:
+    compare-versions: ^3.4.0
+    invariant: ^2.2.4
+  checksum: f851d7eb5cda55f918abd9acc5f74c1e842d9429ec92c04e0847cb6e6e541bebbdbbaf8550659c8d88f8e38752274b3dad9cd8c94e171ad2752bbabacb608124
   languageName: node
   linkType: hard
 
@@ -19030,8 +19105,8 @@ __metadata:
     expo-linking: 5.0.2
     expo-localization: 14.3.0
     expo-module-scripts: 3.0.11
-    expo-modules-autolinking: 1.5.1
-    expo-modules-core: 1.5.11
+    expo-modules-autolinking: 1.5.2
+    expo-modules-core: 1.7.0
     expo-splash-screen: 0.20.5
     expo-status-bar: 1.6.0
     expo-task-manager: 11.3.0
