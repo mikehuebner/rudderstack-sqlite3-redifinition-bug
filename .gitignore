@@ -41,7 +41,6 @@ Thumbs.db
 # Expo
 node_modules/
 .expo/
-.yarn/
 dist/
 npm-debug.*
 *.jks
@@ -52,6 +51,13 @@ npm-debug.*
 *.orig.*
 web-build/
 cache/
+
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 
 apps/expo-e2e/artifacts
